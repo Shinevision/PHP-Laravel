@@ -22,7 +22,16 @@
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            <h1>Test!!!!</h1>
+            <h1>Test to "register" user ( test if you can add a user to the database )</h1>
+            <form action="" method="post">
+                <p>Username</p>
+                <input type="text" name="name">
+                <p>Email</p>
+                <input type="text" name="email">
+                <p>Password</p>
+                <input type="password" name="password">
+                <input type="submit" value="submit">
+            </form>
         </div>
     </body>
 </html>
