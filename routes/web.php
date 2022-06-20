@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/music/{id}', \App\Http\Controllers\MusicController::class);
+Route::get('/todo/{id}', \App\Http\Controllers\MusicController::class);
