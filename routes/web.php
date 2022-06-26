@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BierController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/music/{id}', \App\Http\Controllers\MusicController::class);
-Route::get('/todo/{id}', \App\Http\Controllers\MusicController::class);
+// Route::get('/music/{id}', \App\Http\Controllers\MusicController::class);
+// Route::get('/todo/{id}', \App\Http\Controllers\MusicController::class);
+
+Route::resource('bier', BierController::class);
